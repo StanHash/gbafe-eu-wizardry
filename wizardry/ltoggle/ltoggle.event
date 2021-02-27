@@ -1,0 +1,15 @@
+
+// hold L to toggle battle animations on the fly
+// hack by circleseverywhere, adapted for eu by stan
+
+#ifdef _FE7A_
+  #include "ltoggle.fe7a.event"
+#endif
+
+#ifdef _FE7B_
+  #include "ltoggle.fe7b.event"
+#endif
+
+#ifdef _FE8E_
+  #include "ltoggle.fe8e.event"
+#endif

@@ -1,0 +1,22 @@
+
+#ifdef _FE7A_
+  #define FREE_SPACE_BEG $0FA6000
+  #define FREE_SPACE_END $0FC0000
+#endif
+
+#ifdef _FE7B_
+  #define FREE_SPACE_BEG $0FA6000
+  #define FREE_SPACE_END $0FC0000
+#endif
+
+#ifdef _FE8E_
+  #define FREE_SPACE_BEG $1146570
+  #define FREE_SPACE_END $2000000
+#endif
+
+ORG FREE_SPACE_BEG
+
+#include "wizardry/casual/casual.event"
+#include "wizardry/ltoggle/ltoggle.event"
+
+ASSERT FREE_SPACE_END - CURRENTOFFSET

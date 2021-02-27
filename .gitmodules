@@ -1,0 +1,3 @@
+[submodule "tools/EventAssembler"]
+	path = tools/EventAssembler
+	url = https://github.com/StanHash/EventAssembler.git

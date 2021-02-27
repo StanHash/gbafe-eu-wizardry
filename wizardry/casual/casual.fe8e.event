@@ -1,0 +1,15 @@
+
+// permanent casual mode
+// for fe8-eu
+
+PUSH
+
+    // undeploy unit instead of killing them
+    ORG $0186DE
+        BYTE 9
+
+    // do not clear supports on "death"
+    ORG $0186E6
+        SHORT $46C0 $46C0
+
+POP

@@ -1,0 +1,20 @@
+
+// hold L to toggle battle animations on the fly
+// for fe7-eu (en/fr/de)
+
+#include "Extensions/Hack Installation.txt"
+
+#include "asm/ltoggle.fe7a.lyn.event"
+
+PUSH
+
+    ORG $02AA42 // GetBattleAnimType::end
+        B($02AA50)
+
+    ORG $02AA4C // BattlePrintDebugHitInfo
+        SHORT $4770 // bx lr
+
+    ORG $02AA50
+        WORD $47184B00; POIN LToggleHook
+
+POP

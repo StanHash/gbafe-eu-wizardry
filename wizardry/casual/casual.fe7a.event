@@ -1,0 +1,15 @@
+
+// permanent casual mode
+// for fe7-eu (en/fr/de)
+
+PUSH
+
+    // undeploy unit instead of killing them
+    ORG $0182B6
+        BYTE 9
+
+    // do not clear supports on "death"
+    ORG $0182BE
+        SHORT $46C0 $46C0
+
+POP

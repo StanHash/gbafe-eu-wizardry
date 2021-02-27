@@ -1,0 +1,10 @@
+
+*.o
+*.lyn.event
+*.4bpp
+*.lz
+*.gbapal
+
+*.gba
+*.sym
+*.sav
